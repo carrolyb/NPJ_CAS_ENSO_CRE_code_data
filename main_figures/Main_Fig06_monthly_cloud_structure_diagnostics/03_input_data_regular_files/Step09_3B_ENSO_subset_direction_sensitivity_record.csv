@@ -1,0 +1,10 @@
+region,relationship_id,predictor,response,n_months_ENSO_subset,Pearson_r_ENSO_subset,slope_ENSO_subset,sign_consistent_allmonth_vs_ENSO_subset
+WP,HCCF_comparator,HCCF_anom,NetPath_high_total_anom,155,-0.6464415410,-15.3749663578,True
+WP,HCTB_candidate_diagnostic,HCTB_anom,NetPath_high_total_anom,155,-0.7740466004,-43.8891596267,True
+WP,LCSP_diagnostic,LCSP_anom,NetPath_low_anom,155,0.9587473289,40.4100695211,True
+CP,HCCF_comparator,HCCF_anom,NetPath_high_total_anom,155,-0.4766500261,-6.5225762671,True
+CP,HCTB_candidate_diagnostic,HCTB_anom,NetPath_high_total_anom,155,-0.5752006448,-33.8409666305,True
+CP,LCSP_diagnostic,LCSP_anom,NetPath_low_anom,155,0.9654052209,30.2188918512,True
+EP,HCCF_comparator,HCCF_anom,NetPath_high_total_anom,155,-0.5829223481,-8.7015635345,True
+EP,HCTB_candidate_diagnostic,HCTB_anom,NetPath_high_total_anom,155,-0.2871965146,-17.0864732780,True
+EP,LCSP_diagnostic,LCSP_anom,NetPath_low_anom,155,0.9539829378,79.2381449346,True

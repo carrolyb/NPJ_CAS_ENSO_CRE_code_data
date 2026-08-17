@@ -1,0 +1,16 @@
+Figure03 degC05 method and checks
+
+- predictor file: /Volumes/My Book/P3/figure_packages/Figure03_cloudtype_occurrence_degC05/03_input_data/nino34_200207_202302.csv
+- predictor column used: nino34_anom
+- ENSO threshold: +/-0.5 C
+- ENSO month counts: El Nino = 54, La Nina = 85
+- anomaly dataset: /Volumes/My Book/P3/figure_packages/Figure03_cloudtype_occurrence_degC05/03_input_data/ceres_monthly_regional_anomalies.nc
+- climatology dataset: /Volumes/My Book/P3/figure_packages/Figure03_cloudtype_occurrence_degC05/03_input_data/ceres_monthly_regional_climatology.nc
+- bootstrap samples: 2000
+- block length (months): 12
+- random seed: 42
+- five-group closure: assigned = 42, duplicated = 0, unassigned = 0
+- regional closure check: five-group sums exactly match 42-class Delta CF in TP/WP/CP/EP
+- black-dot definition: 95% moving-block-bootstrap confidence interval excludes zero
+- significant 42-class cell counts: TP = 25, WP = 32, CP = 35, EP = 23
+- note: this package uses the degC05 ENSO definition and is intentionally separate from the later 64/91 full-CF main-chain Figure 03 package

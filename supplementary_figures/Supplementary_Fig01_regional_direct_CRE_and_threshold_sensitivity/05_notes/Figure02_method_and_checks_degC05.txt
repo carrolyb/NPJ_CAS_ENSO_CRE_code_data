@@ -1,0 +1,16 @@
+Figure02 method and checks (+/-0.5C ENSO definition)
+
+- anomaly dataset: /Volumes/My Book/P3/data_processed/anomalies/ceres_monthly_anomalies.nc
+- predictor file: /Volumes/My Book/P3/data_processed/anomalies/nino34_200207_202302.csv
+- generated ENSO month file: /Volumes/My Book/P3/figure_packages/Figure02_direct_regional_CRE_degC05/03_input_data/enso_month_samples.csv
+- generated ENSO event file: /Volumes/My Book/P3/figure_packages/Figure02_direct_regional_CRE_degC05/03_input_data/enso_event_summary.csv
+- predictor column used: nino34_anom
+- main threshold: +/-0.50 C
+- sensitivity thresholds: +/-0.5 C, +/-0.75 C, +/-1 C
+- El Nino months: 54
+- La Nina months: 85
+- El Nino events: 8
+- La Nina events: 12
+- bootstrap samples: 2000
+- block length (months): 12
+- random seed: 42

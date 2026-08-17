@@ -1,0 +1,99 @@
+Step10-1B-2B ENSO event robustness and Figure 10 gate summary
+
+Fixed preconditions entering this step
+- formal direct chain identified and Figure 2 same-chain reproduction passed = True.
+- direct response terminology = fixed regional-box mean direct daytime Net CRE anomaly.
+- direct response is not separately ocean-masked.
+- metric/pathway chain and direct chain have compatible fixed regional-box spatial support = True.
+- Step10-1B-1 moving-block bootstrap passed = True.
+- Step10-1B-2A purged blocked CV passed = True.
+- M3 relative to M1 held-out increments are positive in WP/CP/EP in Step10-1B-2A.
+- EP M2 relative to M1 remains negative as a record-only regional difference.
+- Figure 10 remains a conditional candidate until this ENSO-event robustness step is passed.
+- HCTB uses remapped current six-cell Deep convective definition.
+- HCCF comparator only.
+- LCSP equals negative current Low cloud occurrence.
+- DCEP excluded.
+- no supplementary figures will be produced.
+- no control / verified mechanism / exact reconstruction / full attribution / prediction skill language.
+
+Input confirmation
+- Step10-1A summary read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1A_formal_direct_series_and_deterministic_model_screening_summary.txt
+- Step10-1B-1 summary read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B1_joint_moving_block_bootstrap_summary.txt
+- Step10-1B-2A spatial audit read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2A_spatial_support_compatibility_audit.txt
+- Step10-1B-2A summary read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2A_spatial_support_and_purged_blocked_CV_summary.txt
+- Figure09 boundary confirmation read only: /Volumes/My Book/P3/outputs/verified/figure09_12_new_chain/final_figures/Figure09_monthly_diagnostic_representativeness_method_and_plot_checks_v2.txt
+- Step09 representativeness summary read only: /Volumes/My Book/P3/outputs/verified/figure09_12_new_chain/Step09_3B_monthly_pathway_representativeness_audit_summary.txt
+
+ENSO event identification
+- event definition used only the existing aligned-monthly phase_index.
+- El Nino event = any continuous non-neutral phase_index=El Nino segment; La Nina event = any continuous non-neutral phase_index=La Nina segment.
+- neutral months interrupt events; events are not merged across neutral months.
+- no event was manually deleted, extended, merged, or reclassified.
+- event inventory output: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_ENSO_event_inventory.csv
+- El Nino total months = 64; La Nina total months = 91; total ENSO event months = 155.
+- number of El Nino events = 11; number of La Nina events = 13.
+- event inventory is identical across WP/CP/EP because all three regions share the same month/phase timeline.
+
+Leave-one-event-out refit stability
+- leave-one-event-out detail output: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_leave_one_event_out_refit_stability.csv
+- leave-one-event-out summary output: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_leave_one_event_out_refit_summary.csv
+- WP: HCTB sign-consistent fraction = 1.000; delta_adjR2 positive fraction = 1.000; delta_RMSE negative fraction = 1.000.
+- WP: delta_adjR2 remaining range = [0.562041, 0.604291]; delta_RMSE remaining range = [-0.668474, -0.592021].
+- WP: most influential removal by delta_adjR2 change = LaNina_13; by delta_RMSE change = LaNina_13.
+- CP: HCTB sign-consistent fraction = 1.000; delta_adjR2 positive fraction = 1.000; delta_RMSE negative fraction = 1.000.
+- CP: delta_adjR2 remaining range = [0.444631, 0.490191]; delta_RMSE remaining range = [-0.474234, -0.426608].
+- CP: most influential removal by delta_adjR2 change = ElNino_01; by delta_RMSE change = ElNino_01.
+- EP: HCTB sign-consistent fraction = 1.000; delta_adjR2 positive fraction = 1.000; delta_RMSE negative fraction = 1.000.
+- EP: delta_adjR2 remaining range = [0.028635, 0.037096]; delta_RMSE remaining range = [-0.115336, -0.088410].
+- EP: most influential removal by delta_adjR2 change = LaNina_04; by delta_RMSE change = ElNino_05.
+- leave-one-event-out results describe removal sensitivity only; they are not reported as held-out diagnostic skill.
+
+Purged event-held-out diagnostic skill
+- for each event, the test set is the full event; the purge window is 6 months on each side; training excludes both the event and the purge window, with natural truncation at the time-series edges.
+- held-out monthly predictions output: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_event_heldout_monthly_predictions.csv
+- held-out skill-by-event output: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_event_heldout_skill_by_event.csv
+- event-level R2 is not reported or interpreted because some events are very short.
+
+Pooled ENSO-event-held-out diagnostics
+- pooled held-out skill output: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_pooled_event_heldout_skill.csv
+- WP: n_heldout_ENSO_months=155, delta_OOF_R2(M3-M1)=0.628288, delta_RMSE(M3-M1)=-0.686965, delta_MAE(M3-M1)=-0.557578, fraction_events_M3_better_RMSE=0.792, fraction_events_M3_better_MAE=0.833.
+- CP: n_heldout_ENSO_months=155, delta_OOF_R2(M3-M1)=0.437934, delta_RMSE(M3-M1)=-0.408687, delta_MAE(M3-M1)=-0.332248, fraction_events_M3_better_RMSE=0.833, fraction_events_M3_better_MAE=0.833.
+- EP: n_heldout_ENSO_months=155, delta_OOF_R2(M3-M1)=0.027780, delta_RMSE(M3-M1)=-0.090871, delta_MAE(M3-M1)=-0.108989, fraction_events_M3_better_RMSE=0.750, fraction_events_M3_better_MAE=0.875.
+
+Event-cluster bootstrap
+- bootstrap design = 2000 replicates, seed 42, resampling unit = ENSO event, stratified separately within El Nino and La Nina event lists.
+- bootstrap reuses held-out monthly observed/predicted records only; models are not refit inside bootstrap replicates.
+- the same sampled event composition is shared across WP/CP/EP and across M1/M3.
+- event-cluster bootstrap output: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_event_cluster_bootstrap_skill_increment.csv
+- WP: delta_OOF_R2 CI=[0.451646, 0.792369], P(delta_OOF_R2>0)=1.000; delta_RMSE CI=[-0.887311, -0.429172], P(delta_RMSE<0)=1.000; delta_MAE CI=[-0.742555, -0.343200], P(delta_MAE<0)=1.000.
+- CP: delta_OOF_R2 CI=[0.295996, 0.596719], P(delta_OOF_R2>0)=1.000; delta_RMSE CI=[-0.538098, -0.279909], P(delta_RMSE<0)=1.000; delta_MAE CI=[-0.445343, -0.235944], P(delta_MAE<0)=1.000.
+- EP: delta_OOF_R2 CI=[0.003558, 0.057831], P(delta_OOF_R2>0)=0.990; delta_RMSE CI=[-0.171760, -0.010262], P(delta_RMSE<0)=0.990; delta_MAE CI=[-0.175503, -0.036936], P(delta_MAE<0)=1.000.
+
+Final Figure 10 gate
+- CP final gate passed = True.
+- WP regional conflict present = False.
+- EP regional conflict present = False.
+- M2 relative to M1 was not used as the final Figure 10 gate.
+- Figure 10 decision = allow Figure 10 to proceed to formal plot-input and plotting preparation.
+- Figure 10 allowed to enter formal plotting = True.
+- main-text figure count after this step = 10.
+- Figure 11 will not be produced.
+- supplementary figures will not be produced.
+
+If Figure 10 is allowed
+- recommended compact structure = 2x3.
+- (a)-(c): WP/CP/EP observed direct anomaly vs M3 held-out fitted anomaly, with purged blocked-CV OOF predictions preferred over in-sample fits.
+- (d): WP/CP/EP purged blocked-CV delta OOF R2(M3-M1) with CI.
+- (e): WP/CP/EP pooled ENSO-event-held-out delta OOF R2(M3-M1) with event-cluster CI.
+- (f): M3 HCTB coefficient or CI with leave-one-event-out stability summary.
+- no Figure 11, no supplementary event-robustness figure, no residual map.
+
+Scope guard
+- this step did not rebuild formal direct monthly series.
+- this step did not recompute HCCF/HCTB/LCSP anomaly series.
+- this step did not draw Figure 10 and did not generate formal Figure 10 plot-input.
+- this step did not use DCEP, CE/GCE, environmental variables, old regional file, or the all-42 joint strict mask.
+- later wording remains limited to diagnostic linkage / event-robust held-out diagnostic skill / association.
+- later wording must not use prediction skill, control, verified mechanism, exact reconstruction, or full attribution.
+- the direct response terminology remains fixed regional-box mean direct daytime Net CRE anomaly and must not be described as ocean-only.

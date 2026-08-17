@@ -1,0 +1,46 @@
+region,physical_group,component,deterministic_estimate,n_cells_display_valid
+WP,low cloud,SW,-1.5400005131124521,12
+CP,low cloud,SW,2.147804500029614,11
+EP,low cloud,SW,1.072118911463928,12
+WP,mid-level cloud,SW,0.33047053194324594,12
+CP,mid-level cloud,SW,-0.44584896451029277,12
+EP,mid-level cloud,SW,-0.10510010596231112,12
+WP,thin high cloud,SW,1.9148624890329105,6
+CP,thin high cloud,SW,-2.697225427359964,6
+EP,thin high cloud,SW,-0.5381303734279013,6
+WP,thick anvil cloud,SW,5.058144408911833,6
+CP,thick anvil cloud,SW,-6.395390565490041,6
+EP,thick anvil cloud,SW,-1.5930752885090662,6
+WP,deep convective cloud,SW,2.752198501718862,6
+CP,deep convective cloud,SW,-4.5522660670128205,6
+EP,deep convective cloud,SW,-1.2307400943899198,6
+WP,low cloud,LW,0.1679219638859234,12
+CP,low cloud,LW,-0.313136479790583,11
+EP,low cloud,LW,-0.02242237849752815,12
+WP,mid-level cloud,LW,-0.27511086061088363,12
+CP,mid-level cloud,LW,0.40161770078463555,12
+EP,mid-level cloud,LW,0.2525618657038544,12
+WP,thin high cloud,LW,-2.3965903242967492,6
+CP,thin high cloud,LW,4.116069097544011,6
+EP,thin high cloud,LW,0.8995463801206225,6
+WP,thick anvil cloud,LW,-3.965206445894072,6
+CP,thick anvil cloud,LW,5.601919218987726,6
+EP,thick anvil cloud,LW,1.3213837555131978,6
+WP,deep convective cloud,LW,-1.7455191435894601,6
+CP,deep convective cloud,LW,3.1652584212815666,6
+EP,deep convective cloud,LW,0.8484931245530394,6
+WP,low cloud,Net,-1.3720785492265284,12
+CP,low cloud,Net,1.8346680202390333,11
+EP,low cloud,Net,1.0496965329664008,12
+WP,mid-level cloud,Net,0.055359671332361415,12
+CP,mid-level cloud,Net,-0.04423126372565811,12
+EP,mid-level cloud,Net,0.1474617597415433,12
+WP,thin high cloud,Net,-0.4817278352638348,6
+CP,thin high cloud,Net,1.418843670184046,6
+EP,thin high cloud,Net,0.3614160066927201,6
+WP,thick anvil cloud,Net,1.0929379630177598,6
+CP,thick anvil cloud,Net,-0.7934713465023115,6
+EP,thick anvil cloud,Net,-0.27169153299587,6
+WP,deep convective cloud,Net,1.0066793581293987,6
+CP,deep convective cloud,Net,-1.3870076457312526,6
+EP,deep convective cloud,Net,-0.38224696983688267,6

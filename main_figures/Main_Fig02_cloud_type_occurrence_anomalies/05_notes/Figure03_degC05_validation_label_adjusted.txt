@@ -1,0 +1,44 @@
+Figure03 degC05 validation
+
+1. Five-group mask closure
+- total number of 42 cells: 42
+- number of assigned cells: 42
+- duplicated cells: 0
+- duplicated cell list: []
+- unassigned cells: 0
+- unassigned cell list: []
+
+2. Regional closure check
+- TP: sum_of_five_group_DeltaCF - sum_of_42class_DeltaCF = 0.000000000000e+00
+- WP: sum_of_five_group_DeltaCF - sum_of_42class_DeltaCF = 0.000000000000e+00
+- CP: sum_of_five_group_DeltaCF - sum_of_42class_DeltaCF = 0.000000000000e+00
+- EP: sum_of_five_group_DeltaCF - sum_of_42class_DeltaCF = 0.000000000000e+00
+
+3. Event sample counts
+- number of El Nino months: [54]
+- number of La Nina months: [85]
+- four regions consistent: True
+
+4. Low-cloud definition audit
+- old Figure03 low_cloud cells: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- new Figure03_degC05 low_cloud cells: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- old vs new low_cloud consistent: True
+- old Figure03 low_cloud definition came from low_thin + low_thick, which corresponds to CTP > 680 hPa (rows 800-680 and 1000-800).
+- requested alternative CTP > 560 hPa option was not used.
+
+5. Deep-convective definition audit
+- old Figure03 deep_convective cell count: 3
+- new Figure03_degC05 deep_convective cell count: 6
+- old Figure03 deep_convective used only tau 22.63-60.36.
+- new Figure03_degC05 deep_convective uses tau >= 22.63, so it includes both the 22.63-60.36 and 60.36-378.65 columns.
+
+6. Bootstrap settings
+- bootstrap samples: 2000
+- block length (months): 12
+- random seed: 42
+
+7. Cell-level significance summary
+- TP: significant 42-class cells = 25
+- WP: significant 42-class cells = 32
+- CP: significant 42-class cells = 35
+- EP: significant 42-class cells = 23

@@ -1,0 +1,35 @@
+Figure06 degC05 method and plot checks
+
+- plotting style source = Figure06 candidate Net decomposition final v4 copy.py
+- ENSO definition = nino34_anom with El Nino >= +0.5 C and La Nina <= -0.5 C
+- monthly source product = daytime candidate integrated chain
+- per-cloud-type paired-valid support = True
+- no all-42 joint strict mask = True
+- cf==0 retained as zero contribution = True
+- Net = SW + LW checked in monthly source = True
+- bootstrap block length (months) = 12
+- bootstrap samples = 2000
+- bootstrap seed = 42
+- bootstrap method = joint moving-block bootstrap over the ENSO-month subset
+- formal plot regenerated from fixed monthly chain plus fixed +/-0.5 C phase definition
+- CRE adjustment is defined as Conditional-CRE + Interaction
+- direct markers are retained for directional comparison only
+
+Reference cross-checks
+- Figure05 degC05 occurrence summaries reused as deterministic occurrence targets = True
+- Figure02 degC05 direct Net summary matched = True
+
+Interpretation checks
+- CP total and direct Net are both significantly positive = True
+- WP total and direct Net are both non-significant = True
+- EP direct Net is significant while total pathway is non-significant = True
+
+Output files
+- png: /Volumes/My Book/P3/figure_packages/Figure06_Net_pathway_decomposition_degC05/01_final_figure/Figure06_Net_pathway_decomposition_degC05.png
+- pdf: /Volumes/My Book/P3/figure_packages/Figure06_Net_pathway_decomposition_degC05/01_final_figure/Figure06_Net_pathway_decomposition_degC05.pdf
+- plot data: /Volumes/My Book/P3/figure_packages/Figure06_Net_pathway_decomposition_degC05/04_key_results/Figure06_degC05_plot_data.csv
+- group summary: /Volumes/My Book/P3/figure_packages/Figure06_Net_pathway_decomposition_degC05/04_key_results/Figure06_degC05_group_summary.csv
+- regional summary: /Volumes/My Book/P3/figure_packages/Figure06_Net_pathway_decomposition_degC05/04_key_results/Figure06_degC05_regional_summary.csv
+- direct summary: /Volumes/My Book/P3/figure_packages/Figure06_Net_pathway_decomposition_degC05/04_key_results/Figure06_degC05_direct_summary.csv
+- caption: /Volumes/My Book/P3/figure_packages/Figure06_Net_pathway_decomposition_degC05/05_notes/Figure06_degC05_caption.md
+- input manifest: /Volumes/My Book/P3/figure_packages/Figure06_Net_pathway_decomposition_degC05/05_notes/Figure06_degC05_input_data_manifest.md

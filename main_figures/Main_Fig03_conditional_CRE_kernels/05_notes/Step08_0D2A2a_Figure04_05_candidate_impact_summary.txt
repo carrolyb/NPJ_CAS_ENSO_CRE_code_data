@@ -1,0 +1,79 @@
+Fixed premises checked
+- candidate chain is allowed as downstream regional quantitative main chain = True
+- Figure 3 full-CF main-text occurrence metric allowed = True
+- legacy Figures 5-7 remain frozen = True
+- source product is daytime = True
+- candidate monthly contribution definition = cosine-area-mean(gridcell_cf_times_gridcell_CRE)
+- candidate uses per-cloud-type paired-valid support = True
+- cf == 0 retained as zero contribution = True
+- Net = SW + LW = True
+- no all-42 joint strict mask = True
+- this step is deterministic impact audit only and does not generate formal figures = True
+
+1. Final candidate climatological conditional CRE definition
+- CRE0 is defined as mean(Q) / mean(CF) for each region x cloud_type, where Q is the candidate monthly regional integrated contribution and CF is cf_region_paired over valid_q_month.
+- This is not a simple area-mean CRE and is not the arithmetic monthly mean of effective CRE.
+
+2. Why this definition is consistent with the integrated regional contribution chain
+- The candidate monthly quantity is already defined as cosine-area-mean(gridcell_cf_times_gridcell_CRE).
+- Using Q0 = mean(candidate monthly integrated contribution) and CF0 = mean(candidate paired-valid regional CF) gives CRE0 = Q0 / CF0, so the occurrence-mediated amount formula DeltaCF x CRE0 stays on the same regional integrated chain.
+- Monthly-mean effective CRE is retained only as a diagnostic and does not replace the main ratio-of-means reference.
+
+3. Closure checks
+- SW/LW/Net reference CRE closure completed: True.
+- SW/LW/Net occurrence amount closure completed: True.
+- Maximum reference closure error = 5.684341886081e-14 W m-2.
+- Maximum occurrence amount closure error = 1.554312234475e-15 W m-2.
+
+4. valid_n inventory
+- WP: n_cells_valid_n_ge_24 = 42, n_cells_valid_n_ge_48 = 42, cells_excluded_by_baseline = 0, cells_newly_excluded_by_valid_n48 = 0.
+- CP: n_cells_valid_n_ge_24 = 41, n_cells_valid_n_ge_48 = 41, cells_excluded_by_baseline = 1, cells_newly_excluded_by_valid_n48 = 0.
+- EP: n_cells_valid_n_ge_24 = 42, n_cells_valid_n_ge_48 = 42, cells_excluded_by_baseline = 0, cells_newly_excluded_by_valid_n48 = 0.
+- Baseline valid_n>=24 excluded cells:
+  CP | cloud_type=6 | CTP=1000-800 hPa | tau=60.36-378.65 | valid_n_kernel=17
+- strict sensitivity valid_n>=48 introduces no newly excluded cells.
+
+5. ratio-of-means versus monthly-mean effective CRE diagnostic
+- Maximum |CRE0_Net_ratio - CRE0_Net_monthlymean| = 55.709901 W m-2 at CP | cloud_type=6 | CTP=1000-800 hPa | tau=60.36-378.65.
+- At that cell: CRE0_Net_ratio = -146.896653, CRE0_Net_monthlymean = -202.606554, difference = +55.709901.
+
+6. Candidate Figure 4 regional CRE versus legacy record
+- CP | cloud_type=6 | low cloud: legacy=-222.202225, candidate=-146.896653, diff=+75.305572, sign_consistent=True.
+- WP | cloud_type=12 | low cloud: legacy=-205.485483, candidate=-166.305319, diff=+39.180164, sign_consistent=True.
+- WP | cloud_type=6 | low cloud: legacy=-191.977997, candidate=-160.994877, diff=+30.983120, sign_consistent=True.
+- WP | cloud_type=5 | low cloud: legacy=-153.993243, candidate=-126.061668, diff=+27.931576, sign_consistent=True.
+- CP | cloud_type=12 | low cloud: legacy=-205.617626, candidate=-180.004165, diff=+25.613461, sign_consistent=True.
+
+7. Candidate Figure 5 five-group Net occurrence pathways versus legacy record
+- CP | low cloud: legacy=2.945621, candidate=1.848256, diff=-1.097365, sign_consistent=True.
+- EP | low cloud: legacy=1.891304, candidate=1.018270, diff=-0.873034, sign_consistent=True.
+- CP | deep convective cloud: legacy=-1.881122, candidate=-1.262973, diff=+0.618149, sign_consistent=True.
+- CP | thick anvil cloud: legacy=-1.186834, candidate=-0.831837, diff=+0.354997, sign_consistent=True.
+- WP | low cloud: legacy=-1.717772, candidate=-1.372012, diff=+0.345760, sign_consistent=True.
+- CP | thin high cloud: legacy=1.467990, candidate=1.217519, diff=-0.250471, sign_consistent=True.
+- EP | deep convective cloud: legacy=-0.605428, candidate=-0.440989, diff=+0.164438, sign_consistent=True.
+- EP | thick anvil cloud: legacy=-0.420335, candidate=-0.315635, diff=+0.104700, sign_consistent=True.
+- Non-focus five-group sign flips recorded (not a stop condition for this step):
+  CP | mid-level cloud: legacy=0.045301, candidate=-0.015810, diff=-0.061112, sign_consistent=False.
+
+8. Twelve focus occurrence pathways sign audit
+- All 12 focus pathways retain sign versus legacy = True.
+- WP | low cloud: legacy=-1.717772, candidate=-1.372012, diff=+0.345760, sign_consistent=True.
+- WP | thin high cloud: legacy=-0.734209, candidate=-0.715127, diff=+0.019082, sign_consistent=True.
+- WP | thick anvil cloud: legacy=0.867777, candidate=0.804203, diff=-0.063573, sign_consistent=True.
+- WP | deep convective cloud: legacy=0.904457, candidate=0.851480, diff=-0.052977, sign_consistent=True.
+- CP | low cloud: legacy=2.945621, candidate=1.848256, diff=-1.097365, sign_consistent=True.
+- CP | thin high cloud: legacy=1.467990, candidate=1.217519, diff=-0.250471, sign_consistent=True.
+- CP | thick anvil cloud: legacy=-1.186834, candidate=-0.831837, diff=+0.354997, sign_consistent=True.
+- CP | deep convective cloud: legacy=-1.881122, candidate=-1.262973, diff=+0.618149, sign_consistent=True.
+- EP | low cloud: legacy=1.891304, candidate=1.018270, diff=-0.873034, sign_consistent=True.
+- EP | thin high cloud: legacy=0.314098, candidate=0.262078, diff=-0.052020, sign_consistent=True.
+- EP | thick anvil cloud: legacy=-0.420335, candidate=-0.315635, diff=+0.104700, sign_consistent=True.
+- EP | deep convective cloud: legacy=-0.605428, candidate=-0.440989, diff=+0.164438, sign_consistent=True.
+
+9. Decisions
+- Figure 4 regional conditional CRE panel requires candidate-chain redraw = True.
+- Figure 5 occurrence-mediated contribution panel requires candidate-chain redraw = True.
+- Allowed to enter Step08-0D-2B Figure 6 candidate Net decomposition audit = True.
+- legacy Figures 5-7 remain frozen = True.
+- Figure 8 formal plotting remains deferred until candidate-chain impact audit is completed = True.

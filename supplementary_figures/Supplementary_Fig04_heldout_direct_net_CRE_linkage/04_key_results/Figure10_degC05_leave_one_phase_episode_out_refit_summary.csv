@@ -1,0 +1,4 @@
+region,n_events_removed_one_at_a_time,min_delta_adjusted_R2_M3_minus_M1,max_delta_adjusted_R2_M3_minus_M1,fraction_events_delta_adjusted_R2_positive,min_delta_RMSE_M3_minus_M1,max_delta_RMSE_M3_minus_M1,fraction_events_delta_RMSE_negative,fraction_events_HCTB_coefficient_sign_consistent,any_rank_deficient_fit,most_influential_event_by_delta_adjusted_R2_change,most_influential_event_by_delta_RMSE_change
+WP,20,0.5525725194901868,0.6026029183010194,1.0,-0.6645901887883512,-0.5773241014362307,1.0,1.0,False,LaNina_12,LaNina_12
+CP,20,0.4446313286600454,0.49019141248334275,1.0,-0.4742342759823688,-0.4266084893366201,1.0,1.0,False,ElNino_01,ElNino_01
+EP,20,0.02863525507835729,0.03709619632282235,1.0,-0.1144189600287222,-0.08840962442355338,1.0,1.0,False,LaNina_03,ElNino_04

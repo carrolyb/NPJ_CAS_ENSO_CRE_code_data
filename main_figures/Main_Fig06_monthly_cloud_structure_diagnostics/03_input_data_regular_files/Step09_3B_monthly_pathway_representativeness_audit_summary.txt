@@ -1,0 +1,70 @@
+Step09-3B monthly pathway representativeness audit summary
+
+Fixed decisions
+- Figures 1–8 remain the only currently fixed main figures.
+- no CE/GCE figure will be produced.
+- no supplementary figures will be produced.
+- no standalone physical-construction figure will be produced before diagnostic tests pass.
+- HCCF is comparator only.
+- HCTB uses the remapped current six-cell Deep convective definition.
+- LCSP is coterminous with current Low cloud.
+- DCEP is excluded.
+- WP/CP/EP only; TP is not included in this monthly diagnostic audit.
+- no direct Net CRE linkage is tested in this step.
+- no environmental variables.
+- no old regional file.
+- no all-42 joint strict mask.
+
+Input definitions
+- Predictors: HCCF_anom, HCTB_anom, LCSP_anom from Step09-3A paired-valid calendar-month anomaly series.
+- Primary responses: NetPath_high_total_anom for HCCF/HCTB and NetPath_low_anom for LCSP.
+- Secondary record only: HCTB_anom -> NetPath_high_contrast_anom; not used for the main-figure gate.
+- Formal inputs remain unstandardized calendar-month anomalies; standardized coefficients are reporting diagnostics only.
+- remapped HCTB used = True; paired-valid anomalies used = True; calendar-month anomaly convention used = True.
+
+Input identity check passed = True.
+
+HCCF comparator -> high-cloud total pathway
+- WP: r=-0.641040, R2=0.410932, slope=-16.070272, slope_95CI=[-20.571603, -13.664923], significant=True, standardized_slope=-0.641040.
+- CP: r=-0.438105, R2=0.191936, slope=-6.831450, slope_95CI=[-9.169601, -4.785962], significant=True, standardized_slope=-0.438105.
+- EP: r=-0.501760, R2=0.251763, slope=-9.108315, slope_95CI=[-12.447020, -7.051992], significant=True, standardized_slope=-0.501760.
+
+HCTB -> high-cloud total pathway
+- WP: r=-0.798115, R2=0.636988, slope=-44.144088, slope_95CI=[-47.794895, -40.104292], significant=True, standardized_slope=-0.798115.
+- CP: r=-0.640715, R2=0.410516, slope=-37.862140, slope_95CI=[-44.723683, -30.339220], significant=True, standardized_slope=-0.640715.
+- EP: r=-0.472323, R2=0.223089, slope=-27.414235, slope_95CI=[-36.684307, -16.552579], significant=True, standardized_slope=-0.472323.
+
+LCSP -> low-cloud pathway
+- WP: r=0.955153, R2=0.912317, slope=40.363655, slope_95CI=[38.673295, 42.060717], significant=True, standardized_slope=0.955153.
+- CP: r=0.956984, R2=0.915819, slope=30.480831, slope_95CI=[28.845698, 32.680079], significant=True, standardized_slope=0.956984.
+- EP: r=0.951260, R2=0.904895, slope=79.563783, slope_95CI=[74.729126, 86.590995], significant=True, standardized_slope=0.951260.
+
+HCTB incremental value beyond HCCF
+- WP: delta_adjusted_R2=0.372313, delta_adjusted_R2_95CI=[0.271604, 0.459883], HCTB_partial_slope=-36.091478, HCTB_partial_slope_95CI=[-39.623411, -31.934320], additional_information_supported=True.
+- CP: delta_adjusted_R2=0.536160, delta_adjusted_R2_95CI=[0.424623, 0.637912], HCTB_partial_slope=-43.944961, HCTB_partial_slope_95CI=[-48.886251, -39.049297], additional_information_supported=True.
+- EP: delta_adjusted_R2=0.489761, delta_adjusted_R2_95CI=[0.375802, 0.611482], HCTB_partial_slope=-43.481572, HCTB_partial_slope_95CI=[-47.775805, -38.985367], additional_information_supported=True.
+
+ENSO-phase subset direction sensitivity
+- HCCF_comparator WP: r_ENSO_subset=-0.646442, slope_ENSO_subset=-15.374966, sign_consistent_allmonth_vs_ENSO_subset=True.
+- HCCF_comparator CP: r_ENSO_subset=-0.476650, slope_ENSO_subset=-6.522576, sign_consistent_allmonth_vs_ENSO_subset=True.
+- HCCF_comparator EP: r_ENSO_subset=-0.582922, slope_ENSO_subset=-8.701564, sign_consistent_allmonth_vs_ENSO_subset=True.
+- HCTB_candidate_diagnostic WP: r_ENSO_subset=-0.774047, slope_ENSO_subset=-43.889160, sign_consistent_allmonth_vs_ENSO_subset=True.
+- HCTB_candidate_diagnostic CP: r_ENSO_subset=-0.575201, slope_ENSO_subset=-33.840967, sign_consistent_allmonth_vs_ENSO_subset=True.
+- HCTB_candidate_diagnostic EP: r_ENSO_subset=-0.287197, slope_ENSO_subset=-17.086473, sign_consistent_allmonth_vs_ENSO_subset=True.
+- LCSP_diagnostic WP: r_ENSO_subset=0.958747, slope_ENSO_subset=40.410070, sign_consistent_allmonth_vs_ENSO_subset=True.
+- LCSP_diagnostic CP: r_ENSO_subset=0.965405, slope_ENSO_subset=30.218892, sign_consistent_allmonth_vs_ENSO_subset=True.
+- LCSP_diagnostic EP: r_ENSO_subset=0.953983, slope_ENSO_subset=79.238145, sign_consistent_allmonth_vs_ENSO_subset=True.
+
+Secondary HCTB structural-alignment record
+- WP: slope=-39.054687, slope_95CI=[-44.838559, -32.356123], significant=True, secondary_only=True.
+- CP: slope=-2.014996, slope_95CI=[-22.899321, 17.171452], significant=False, secondary_only=True.
+- EP: slope=9.093228, slope_95CI=[-11.371746, 34.418282], significant=False, secondary_only=True.
+
+HCTB main-figure gate satisfied = True. Supported region(s): WP, CP, EP.
+LCSP main-figure gate satisfied = True. Supported region(s): WP, CP, EP.
+diagnostic_representativeness_figure_candidate = True.
+no_additional_main_figure_after_Figure8 = False.
+if a new figure is warranted, prepare only one additional diagnostic representativeness figure next = True.
+main-text results terminate at Figure 8 = False.
+- This step does not decide on any direct Net CRE linkage figure and does not enter direct-response testing.
+- This step did not use any direct response variable, old regional file, DCEP, environmental variable, or all-42 joint strict mask.

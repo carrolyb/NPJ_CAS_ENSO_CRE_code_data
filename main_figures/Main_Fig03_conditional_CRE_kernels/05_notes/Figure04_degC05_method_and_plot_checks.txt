@@ -1,0 +1,52 @@
+Figure04 degC05 method and plot checks
+
+Actual candidate input files
+- complete Figure 4 candidate plot-input table: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/03_input_data/Step08_0D3A_Figure04_complete_candidate_plot_input.csv
+- TP candidate conditional CRE table: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/03_input_data/Step08_0D3A_Figure04_TP_candidate_conditional_CRE.csv
+- TP candidate summary: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/05_notes/Step08_0D3A_TP_candidate_conditional_CRE_summary.txt
+- WP/CP/EP candidate regional conditional CRE table: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/03_input_data/Step08_0D2A2a_Figure04_candidate_regional_conditional_CRE.csv
+- candidate valid_n inventory: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/03_input_data/Step08_0D2A2a_candidate_validn_inventory.csv
+- candidate Figure 4/5 impact summary: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/05_notes/Step08_0D2A2a_Figure04_05_candidate_impact_summary.txt
+- direct bootstrap and pathway alignment summary: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/05_notes/Step08_0D2B2b2_direct_bootstrap_and_pathway_alignment_summary.txt
+- Figure 4 method boundary reference: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/05_notes/Figure04_method_and_plot_checks_v2.txt
+- Figure 4 daytime provenance reference: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/05_notes/Figure04_daytime_provenance_check.txt
+- legacy Figure 4 layout script reused for style only: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/05_notes/make_fig04_climatological_conditional_CRE.py
+
+Method boundary
+- package label = degC05
+- Figure 4 CRE0 kernels are climatological and numerically independent of the ENSO threshold definition used for downstream occurrence figures.
+- Figure 4 uses candidate ratio-of-means CRE0 = mean(Q)/mean(CF).
+- no legacy regional values used for plotting = True
+- daytime source confirmed = True
+- per-cloud-type paired-valid rule confirmed = True
+- cf==0 zero contribution rule confirmed = True
+- Net=SW+LW confirmed = True
+- no all-42 joint strict mask = True
+- TP closure max error = 5.684341886081e-14 W m-2
+- TP ratio-minus-monthlymean maximum absolute difference = 4.948686 W m-2
+- candidate WP/CP/EP source files confirmed = True
+- TP/WP/EP have no baseline exclusions = True
+- CP has exactly one baseline excluded cell: cloud_type=6, valid_n=17 = True
+- valid_n>=48 introduces no additional exclusions = True
+- five-group mapping closure: assigned=42, duplicated=0, unassigned=0
+- Figure 4 supplies reference kernels for pathway diagnostics and is not an all-sky direct CRE reconstruction.
+- no candidate values or masks were recomputed during formal plotting.
+
+Panel and mask status
+- panel (a) uses TP CRE0_SW_ratio from the complete candidate input table.
+- panel (b) uses TP CRE0_LW_ratio from the complete candidate input table.
+- panel (c) uses TP CRE0_Net_ratio from the complete candidate input table.
+- panel (d) uses WP CRE0_Net_ratio from the complete candidate input table.
+- panel (e) uses CP CRE0_Net_ratio from the complete candidate input table.
+- panel (f) uses EP CRE0_Net_ratio from the complete candidate input table.
+- masked cells do not display candidate CRE values; the CP low-valid cell is replaced by a gray hatched overlay.
+- baseline hatch appears only in panel (e) at CTP=1000-800 hPa, tau=60.36-378.65, cloud_type=6.
+- no WP valid_n>=48 hatch added = True
+- no TP or EP extra hatch added = True
+
+Output files
+- png: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/01_final_figure/Figure04_conditional_CRE_kernels_degC05.png
+- pdf: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/01_final_figure/Figure04_conditional_CRE_kernels_degC05.pdf
+- plot data: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/04_key_results/Figure04_degC05_plot_data.csv
+- caption: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/05_notes/Figure04_degC05_caption.md
+- method checks: /Volumes/My Book/P3/figure_packages/Figure04_conditional_CRE_kernels_degC05/05_notes/Figure04_degC05_method_and_plot_checks.txt

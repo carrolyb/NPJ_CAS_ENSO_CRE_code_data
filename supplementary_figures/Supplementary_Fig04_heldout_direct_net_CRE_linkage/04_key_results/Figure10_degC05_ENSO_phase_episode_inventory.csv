@@ -1,0 +1,21 @@
+event_id,phase,start_month,end_month,n_months,first_index,last_index,included_in_event_heldout_test,notes
+ElNino_01,El Nino,2002-07-01,2003-02-01,8,0,7,True,
+LaNina_01,La Nina,2003-05-01,2003-05-01,1,10,10,True,short event; do not interpret event-level R2 and treat Pearson r cautiously
+ElNino_02,El Nino,2004-08-01,2005-01-01,6,25,30,True,
+LaNina_02,La Nina,2005-11-01,2006-03-01,5,40,44,True,
+ElNino_03,El Nino,2006-09-01,2007-01-01,5,50,54,True,
+LaNina_03,La Nina,2007-07-01,2008-06-01,12,60,71,True,
+LaNina_04,La Nina,2008-12-01,2009-03-01,4,77,80,True,
+ElNino_04,El Nino,2009-08-01,2010-03-01,8,85,92,True,
+LaNina_05,La Nina,2010-06-01,2011-05-01,12,95,106,True,
+LaNina_06,La Nina,2011-08-01,2012-04-01,9,109,117,True,
+LaNina_07,La Nina,2013-01-01,2013-02-01,2,126,127,True,short event; do not interpret event-level R2 and treat Pearson r cautiously
+LaNina_08,La Nina,2014-02-01,2014-02-01,1,139,139,True,short event; do not interpret event-level R2 and treat Pearson r cautiously
+ElNino_05,El Nino,2014-11-01,2015-01-01,3,148,150,True,
+ElNino_06,El Nino,2015-04-01,2016-04-01,13,153,165,True,
+LaNina_09,La Nina,2016-08-01,2016-12-01,5,169,173,True,
+LaNina_10,La Nina,2017-10-01,2018-04-01,7,183,189,True,
+ElNino_07,El Nino,2018-10-01,2019-05-01,8,195,202,True,
+ElNino_08,El Nino,2019-11-01,2020-01-01,3,208,210,True,
+LaNina_11,La Nina,2020-08-01,2021-04-01,9,217,225,True,
+LaNina_12,La Nina,2021-08-01,2023-01-01,18,229,246,True,

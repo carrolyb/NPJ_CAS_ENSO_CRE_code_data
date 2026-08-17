@@ -1,0 +1,36 @@
+Step09-3A monthly anomaly convention trace
+
+Fixed decisions carried into this step
+- Step09-2 CE/GCE results are retained as internal audit records only.
+- no CE/GCE main figure will be produced.
+- no supplementary figures will be produced.
+- the previously proposed standalone physical-construction Figure 9 is cancelled because it would repeat Figures 3, 5, and 7.
+- new figures after Figure 8 will be generated only if monthly diagnostic tests provide independent main-text conclusions.
+- DCEP excluded from all subsequent main-text diagnostics.
+- TP not promoted to WP/CP/EP-level monthly diagnostic analysis.
+- no environmental variables.
+- no old regional file.
+- no all-42 joint strict mask.
+
+Direct Net monthly response definition
+- direct Net monthly response uses precomputed calendar-month anomalies from data_processed/anomalies/ceres_monthly_anomalies.nc, with no detrending and no standardization.
+- The anomaly builder script is scripts/03_build_ceres_anomalies.py.
+- The core anomaly implementation is enso_cloud.ceres.monthly_climatology(ds) = ds.groupby('time.month').mean('time') and monthly_anomalies(ds, climatology) = ds.groupby('time.month') - climatology.
+- The Step08 direct alignment trace confirms the formal direct chain uses data_processed/anomalies/ceres_monthly_anomalies.nc and not any old regional file.
+- Step08_0D2B2b2_direct_regional_monthly_Net_series.csv is an ENSO-month subset of the direct anomaly chain.
+- Rebuilt all-month regional direct Net anomaly alignment against the ENSO-month subset: n_aligned_rows=465, max_abs_difference=0.0000344204 W m^-2, mean_abs_difference=0.0000048684 W m^-2.
+
+Original Figure 11-12 anomaly convention trace
+- original Figure 11-12 monthly chain used anomaly datasets; standardization in main_figure_lib is limited to a display-oriented 3-month-running-mean time-series panel, not the Figure 11-12 metric-response preprocessing.
+- No monthly detrending logic was found in the original Figure 11-12 shared library.
+- No formal standardization of metric-response inputs was found for the original Figure 11-12 monthly relationship logic.
+
+Unified Step09-3A anomaly convention for new metric and pathway series
+- New metric and cloud-type pathway series should use the same calendar-month anomaly convention as the confirmed direct Net chain.
+- Metric_anom(t) = Metric_raw(t) - climatological_mean_for_calendar_month(Metric_raw).
+- Pathway_anom(t) = Pathway_raw(t) - climatological_mean_for_calendar_month(Pathway_raw).
+- direct_Net_anom is already in anomaly form on that same convention.
+- remove calendar-month climatology = True
+- linear detrending required at this step = False
+- standardization required at this step = False
+- This step does not run regression, correlation, bootstrap, or any significance test.

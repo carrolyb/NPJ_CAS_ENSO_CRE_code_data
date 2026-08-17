@@ -1,0 +1,20 @@
+Figure05 degC05 preparation summary
+
+- ENSO definition: nino34_anom with El Nino >= +0.5 C and La Nina <= -0.5 C
+- ENSO month counts: El Nino = 54, La Nina = 85
+- bootstrap samples = 2000
+- bootstrap block length (months) = 12
+- random seed = 42
+- SW/LW/Net deterministic closure max error = 3.747002708110e-16 W m-2
+- significant cell counts = TP:25, WP:32, CP:36, EP:25
+- display-valid cell counts = TP:42, WP:42, CP:41, EP:42
+- baseline hatched cells = 1
+- unique hatched cell: CP | cloud_type=6 | ctp=1000-800 | tau=60.36-378.65 | valid_n=17
+
+TP five-group Net summary
+- low cloud: Net=0.815054, n_display_valid=12
+- mid-level cloud: Net=-0.014310, n_display_valid=12
+- thin high cloud: Net=0.332710, n_display_valid=6
+- thick anvil cloud: Net=-0.225104, n_display_valid=6
+- deep convective cloud: Net=-0.418167, n_display_valid=6
+- TP sum42 Net = 0.490183, n_display_valid=42

@@ -1,0 +1,5 @@
+physical_group,n_total_gridcells,n_display_gridcells,n_significant_gridcells,significant_fraction,n_positive_gridcells,n_negative_gridcells,n_significant_positive_gridcells,n_significant_negative_gridcells
+low cloud,4800,4800,2850,0.59375,2659,2141,1828,1022
+thin high cloud,4800,4800,2621,0.5460416666666666,3397,1403,2118,503
+thick anvil cloud,4800,4800,2063,0.4297916666666667,2538,2262,1091,972
+deep convective cloud,4800,4800,2031,0.423125,2330,2465,907,1124

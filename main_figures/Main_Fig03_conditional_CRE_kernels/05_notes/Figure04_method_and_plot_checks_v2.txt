@@ -1,0 +1,37 @@
+Figure 4 method and plot checks v2
+
+v2 input reuse policy:
+- v2 plot data are read directly from /Volumes/My Book/P3/outputs/verified/figure04_conditional_cre/Figure04_conditional_CRE_cell_data.csv
+- v2 physical-group summary is read directly from /Volumes/My Book/P3/outputs/verified/figure04_conditional_cre/Figure04_physical_group_conditional_CRE_summary.csv
+- v2 TP-difference table is read directly from /Volumes/My Book/P3/outputs/verified/figure04_conditional_cre/Figure04_regional_Net_CRE0_difference_from_TP.csv
+- v2 does not recompute CRE0_SW, CRE0_LW, CRE0_Net, valid_n_kernel, hatch mask, or physical-group mapping.
+
+Daytime provenance file:
+- /Volumes/My Book/P3/outputs/verified/figure04_conditional_cre/Figure04_daytime_provenance_check.txt
+- source_product_is_daytime = True
+- Figure04_cre0_derived_from_daytime_product = True
+- Figure05_occurrence_contribution_is_daytime_based = True
+- Figure06_net_pathway_is_daytime_based = True
+- whether daytime terminology was added to the figure and caption = True
+
+Current terminology boundary:
+- conditional CRE is described as daytime-sampled only if verified from the source-product chain.
+- these Net CRE values should not be interpreted as daily-mean CREs.
+
+v1 invariance checks carried into v2:
+- maximum |net_closure_residual| in reused v1 cell-data = 0.000000e+00 W m-2
+- baseline hatched cell count = 1
+- v2 keeps the same 2x3 panel structure, the same heatmap values, the same shared Net color scale, the same hatch mask, and the same five-group box geometry as v1.
+- The only intended visual changes are simplified group labels in panel (a) and terminology updates conditioned on provenance verification.
+
+Regional TP-difference summary reused from v1 data:
+- CP: mean_abs_difference=1.506226 W m-2; max_abs_difference=12.698668 W m-2; sign_changed_cell_count=0
+- EP: mean_abs_difference=2.757432 W m-2; max_abs_difference=8.204861 W m-2; sign_changed_cell_count=0
+- WP: mean_abs_difference=2.862714 W m-2; max_abs_difference=17.525559 W m-2; sign_changed_cell_count=2
+
+Reference to v1 method file:
+- /Volumes/My Book/P3/outputs/verified/figure04_conditional_cre/Figure04_method_and_plot_checks_v1.txt
+
+Key retained boundary from v1:
+- No all-42 joint strict mask is used in this figure.
+- This figure reuses the Figure 5 per-cloud-type sample rule and does not introduce a new sample definition or a new CRE0 calculation basis.

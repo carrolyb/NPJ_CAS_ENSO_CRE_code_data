@@ -1,0 +1,16 @@
+Figure05 degC05 method and plot checks
+
+- final plot-input path: /Volumes/My Book/P3/figure_packages/Figure05_occurrence_mediated_Net_degC05/04_key_results/Figure05_degC05_final_plot_input.csv
+- preparation summary: /Volumes/My Book/P3/figure_packages/Figure05_occurrence_mediated_Net_degC05/05_notes/Figure05_degC05_preparation_summary.txt
+- plotting style source = Figure05 candidate occurrence Net final v2 copy.py
+- ENSO definition = nino34_anom with El Nino >= +0.5 C and La Nina <= -0.5 C
+- figure term = occurrence-mediated daytime Net CRE contribution only
+- no all-42 joint strict mask = True
+- baseline CP hatch retained = True
+- significant cell counts = TP:25, WP:32, CP:36, EP:25
+- hatch counts = TP:0, WP:0, CP:1, EP:0
+- common symmetric color scale centered at zero = True (vmax=0.752526)
+- png: /Volumes/My Book/P3/figure_packages/Figure05_occurrence_mediated_Net_degC05/01_final_figure/Figure05_occurrence_mediated_Net_degC05.png
+- pdf: /Volumes/My Book/P3/figure_packages/Figure05_occurrence_mediated_Net_degC05/01_final_figure/Figure05_occurrence_mediated_Net_degC05.pdf
+- plot data: /Volumes/My Book/P3/figure_packages/Figure05_occurrence_mediated_Net_degC05/04_key_results/Figure05_degC05_plot_data.csv
+- caption: /Volumes/My Book/P3/figure_packages/Figure05_occurrence_mediated_Net_degC05/05_notes/Figure05_degC05_caption.md

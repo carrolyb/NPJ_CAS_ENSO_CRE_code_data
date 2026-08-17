@@ -1,0 +1,106 @@
+Figure10 event-robust direct diagnostic linkage method and plot checks v1
+
+Fixed audited inputs actually used
+- panel (a)-(c) blocked-CV OOF monthly prediction input: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2A_purged_blocked_CV_monthly_predictions.csv
+- panel (a)-(c) blocked-CV skill summary input: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2A_purged_blocked_CV_model_skill.csv
+- panel (a)-(d) blocked-CV deterministic increment input: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2A_purged_blocked_CV_model_increment_deterministic.csv
+- panel (d) blocked-CV moving-block-bootstrap CI input: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2A_purged_blocked_CV_skill_increment_bootstrap.csv
+- panel (e) pooled ENSO-event-held-out skill input: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_pooled_event_heldout_skill.csv
+- panel (e) event-cluster-bootstrap CI input: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_event_cluster_bootstrap_skill_increment.csv
+- panel (f) moving-block HCTB coefficient input: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B1_HCTB_incremental_coefficient_stability.csv
+- panel (f) leave-one-event-out coefficient range input: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_leave_one_event_out_refit_stability.csv
+- direct-chain boundary input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1A_formal_direct_series_and_deterministic_model_screening_summary.txt
+- formal direct series input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1A_formal_direct_regional_monthly_Net_series.csv
+- formal direct aligned monthly input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1A_metric_formal_direct_aligned_monthly_series.csv
+- deterministic model summary input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1A_deterministic_model_summary.csv
+- predictor collinearity input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1A_predictor_collinearity_diagnostic.csv
+- Figure 2 same-chain reproduction input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1A_formal_direct_vs_Figure02_composite_reproduction_check.csv
+- moving-block bootstrap summary input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B1_joint_moving_block_bootstrap_summary.txt
+- moving-block bootstrap model summary input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B1_model_bootstrap_summary.csv
+- moving-block bootstrap increment input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B1_model_increment_bootstrap_summary.csv
+- spatial-support audit input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2A_spatial_support_compatibility_audit.txt
+- blocked-CV fold inventory input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2A_purged_blocked_CV_fold_inventory.csv
+- blocked-CV summary input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2A_spatial_support_and_purged_blocked_CV_summary.txt
+- ENSO event inventory input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_ENSO_event_inventory.csv
+- leave-one-event-out summary input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_leave_one_event_out_refit_summary.csv
+- event-held-out monthly input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_event_heldout_monthly_predictions.csv
+- event-held-out skill-by-event input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_event_heldout_skill_by_event.csv
+- ENSO-event robustness summary input read only: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/Step10_1B2B_ENSO_event_robustness_and_Figure10_gate_summary.txt
+- Figure 9 method boundary reference if present: /Volumes/My Book/P3/outputs/verified/figure09_12_new_chain/final_figures/Figure09_monthly_diagnostic_representativeness_method_and_plot_checks_v2.txt
+- Figure 9 caption boundary reference if present: /Volumes/My Book/P3/outputs/verified/figure09_12_new_chain/final_figures/Figure09_monthly_diagnostic_representativeness_caption_v2.md
+
+Plotting scope and guards
+- formal plot generated from audited fixed outputs only.
+- no formal direct monthly series recomputed during plotting.
+- no HCCF/HCTB/LCSP metrics recomputed during plotting.
+- no models refit during plotting.
+- no bootstrap, CV or event robustness recomputed during plotting.
+- panels (a)-(c) use purged blocked-CV monthly OOF predictions only; no in-sample fit and no event-held-out estimates are used as the scatter source.
+- panel (d) uses blocked-CV deterministic increments with moving-block-bootstrap CI from Step10-1B-2A only.
+- panel (e) uses pooled ENSO-event-held-out deterministic increments with event-cluster-bootstrap CI from Step10-1B-2B only.
+- panel (f) distinguishes moving-block 95% CI from leave-one-event-out coefficient range.
+
+Approval chain
+- Figure 10 approved after formal direct-chain reproduction, spatial-support audit, moving-block bootstrap, purged blocked CV and ENSO-event robustness gates.
+- models plotted: M1 = LCSP + HCCF; M3 = LCSP + HCCF + HCTB.
+- M2 is not used as the main Figure 10 gate.
+
+Method boundary
+- regions = WP, CP, EP only; TP not plotted.
+- formal direct response terminology = fixed regional-box mean direct daytime Net CRE anomaly.
+- direct response uses all finite direct-field grid cells within fixed regional boxes.
+- separate ocean mask used = False.
+- metric/direct spatial support compatible = True.
+- anomaly convention = calendar-month climatology removed, not detrended, not standardized as preprocessing.
+- HCCF comparator only.
+- HCTB uses remapped current six-cell Deep convective definition.
+- HCTB current Deep convective members = 29,30,35,36,41,42.
+- LCSP equals negative current Low cloud occurrence.
+- DCEP excluded.
+- no CE/GCE.
+- no environmental variables.
+- no old regional file.
+- no all-42 joint strict mask.
+
+Blocked-CV design
+- fold inventory rows = 21.
+- blocked CV design: 21 folds, 12-month test blocks except final 8-month block, 6-month purge each side.
+
+ENSO-event design
+- ENSO event inventory = 11 El Nino events / 64 months, 13 La Nina events / 91 months.
+- pooled ENSO-event held-out months = 155.
+
+Plotted increment values
+- WP blocked-CV delta OOF R2(M3-M1) = +0.616734, 95% CI [+0.507450, +0.721265].
+- WP ENSO-event-held-out delta OOF R2(M3-M1) = +0.628288, 95% CI [+0.451646, +0.792369].
+- WP M3 HCTB coefficient = -49.400666, moving-block 95% CI [-54.626488, -43.112247].
+- WP leave-one-event-out HCTB coefficient sign consistency = 1.000.
+- WP leave-one-event-out HCTB coefficient range = [-50.486851, -47.297956].
+- CP blocked-CV delta OOF R2(M3-M1) = +0.477245, 95% CI [+0.354838, +0.565539].
+- CP ENSO-event-held-out delta OOF R2(M3-M1) = +0.437934, 95% CI [+0.295996, +0.596719].
+- CP M3 HCTB coefficient = -56.360097, moving-block 95% CI [-63.759902, -48.691536].
+- CP leave-one-event-out HCTB coefficient sign consistency = 1.000.
+- CP leave-one-event-out HCTB coefficient range = [-58.440844, -54.888940].
+- EP blocked-CV delta OOF R2(M3-M1) = +0.031830, 95% CI [+0.012400, +0.050526].
+- EP ENSO-event-held-out delta OOF R2(M3-M1) = +0.027780, 95% CI [+0.003558, +0.057831].
+- EP M3 HCTB coefficient = -51.319850, moving-block 95% CI [-61.842399, -36.538391].
+- EP leave-one-event-out HCTB coefficient sign consistency = 1.000.
+- EP leave-one-event-out HCTB coefficient range = [-54.653955, -48.121421].
+
+Outputs
+- plot data output: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/final_figures/Figure10_event_robust_direct_diagnostic_linkage_plot_data_v1.csv
+- png output: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/final_figures/Figure10_event_robust_direct_diagnostic_linkage_final_v1.png
+- pdf output: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/final_figures/Figure10_event_robust_direct_diagnostic_linkage_final_v1.pdf
+- caption output: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/final_figures/Figure10_event_robust_direct_diagnostic_linkage_caption_v1.md
+- method checks output: /Volumes/My Book/P3/outputs/verified/figure10_direct_linkage/final_figures/Figure10_event_robust_direct_diagnostic_linkage_method_and_plot_checks_v1.txt
+
+Interpretation boundary
+- Figure 10 evaluates diagnostic linkage / held-out diagnostic skill only.
+- Figure 10 is not independent validation.
+- Figure 10 is not prediction skill.
+- Figure 10 is not direct-response reconstruction.
+- Figure 10 does not establish causal control or complete attribution.
+- no prediction skill / control / verified mechanism / independent validation / exact reconstruction / full attribution interpretation.
+- direct response must not be described as ocean-only.
+- no Figure 11 and no supplementary figures.
+- main-text figure count after Figure 10 = 10.

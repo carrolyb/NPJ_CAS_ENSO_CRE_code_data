@@ -1,0 +1,39 @@
+Figure08 degC05 method and plot checks
+
+- plotting style source = Figure08 spatial Net total pathways final v2 copy.py
+- ENSO definition = nino34_anom with El Nino >= +0.5 C and La Nina <= -0.5 C
+- source product = daytime gridded monthly cloud-type contribution chain
+- paired-valid inherited through the gridded candidate-compatible contribution chain
+- no all-42 joint strict mask used
+- no hatch drawn anywhere
+- focus groups = low cloud, thin high cloud, thick anvil cloud, deep convective cloud
+- mid-level cloud excluded from the main panels
+- El Nino months = 54
+- La Nina months = 85
+- bootstrap block length (months) = 12
+- bootstrap samples = 2000
+- bootstrap seed = 42
+- bootstrap method = joint moving-block bootstrap on the ENSO-month subset
+- final display gridcells per panel = 4800
+- shared symmetric color scale = [-15, 15] W m^-2
+
+Reference cross-checks
+- Figure07 degC05 method reference read = True
+- all regional spatial signs consistent with Figure07 Net = True
+- all regional spatial significance flags consistent with Figure07 Net = True
+
+Pointwise significance coverage
+- low cloud: significant=2850/4800 (0.593750)
+- thin high cloud: significant=2621/4800 (0.546042)
+- thick anvil cloud: significant=2063/4800 (0.429792)
+- deep convective cloud: significant=2031/4800 (0.423125)
+
+Output files
+- png: /Volumes/My Book/P3/figure_packages/Figure08_spatial_Net_total_pathways_degC05/01_final_figure/Figure08_spatial_Net_total_pathways_degC05.png
+- pdf: /Volumes/My Book/P3/figure_packages/Figure08_spatial_Net_total_pathways_degC05/01_final_figure/Figure08_spatial_Net_total_pathways_degC05.pdf
+- final plot input: /Volumes/My Book/P3/figure_packages/Figure08_spatial_Net_total_pathways_degC05/04_key_results/Figure08_degC05_final_plot_input.nc
+- spatial bootstrap: /Volumes/My Book/P3/figure_packages/Figure08_spatial_Net_total_pathways_degC05/04_key_results/Figure08_degC05_spatial_Net_total_bootstrap.nc
+- regional record: /Volumes/My Book/P3/figure_packages/Figure08_spatial_Net_total_pathways_degC05/04_key_results/Figure08_degC05_spatial_vs_Figure07_regional_record.csv
+- significance coverage: /Volumes/My Book/P3/figure_packages/Figure08_spatial_Net_total_pathways_degC05/04_key_results/Figure08_degC05_spatial_significance_coverage_summary.csv
+- caption: /Volumes/My Book/P3/figure_packages/Figure08_spatial_Net_total_pathways_degC05/05_notes/Figure08_degC05_caption.md
+- input manifest: /Volumes/My Book/P3/figure_packages/Figure08_spatial_Net_total_pathways_degC05/05_notes/Figure08_degC05_input_data_manifest.md

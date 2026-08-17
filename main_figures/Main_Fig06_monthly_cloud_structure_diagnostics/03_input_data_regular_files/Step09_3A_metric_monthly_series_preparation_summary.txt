@@ -1,0 +1,51 @@
+Step09-3A metric monthly series preparation summary
+
+Fixed manuscript decisions
+- Step09-2 CE/GCE results are retained as internal audit records only.
+- no CE/GCE main figure will be produced.
+- no supplementary figures will be produced.
+- the previously proposed standalone physical-construction Figure 9 is cancelled because it would repeat Figures 3, 5, and 7.
+- new figures after Figure 8 will be generated only if monthly diagnostic tests provide independent main-text conclusions.
+- DCEP excluded from all subsequent main-text diagnostics.
+- TP not promoted to WP/CP/EP-level monthly diagnostic analysis.
+- no environmental variables.
+- no old regional file.
+- no all-42 joint strict mask.
+
+Metric role definitions
+- HCCF = total high-cloud occurrence comparator.
+- HCTB = high-cloud structural-balance diagnostic using remapped six-cell Deep convective.
+- LCSP = low-cloud suppression diagnostic.
+- These are occurrence-structure metrics, not radiative contributions.
+- HCCF is comparator only.
+- DCEP is not read and is not computed.
+
+Required status record
+1. No supplementary figures will be produced.
+2. CE/GCE figure removed from manuscript.
+3. standalone physical-construction Figure 9 cancelled.
+4. additional main figure generation is conditional on monthly diagnostic test results.
+5. HCCF/HCTB/LCSP monthly paired-valid raw series successfully generated = True.
+6. HCTB uses the current six-cell Deep convective definition = True.
+7. LCSP remains coterminous with current Low cloud and retains the negative low-cloud-sign definition = True.
+8. DCEP fully excluded = True.
+9. cloud-type Net pathway monthly raw series successfully generated = True.
+10. monthly anomaly convention clarified = True.
+11. anomaly-ready series successfully generated = True.
+12. HCTB legacy/current definition difference record: WP: current-legacy delta difference=-0.002875, sign_consistent=False; CP: current-legacy delta difference=0.006448, sign_consistent=True; EP: current-legacy delta difference=0.001760, sign_consistent=True.
+13. deterministic ENSO composite direction record: WP: delta_HCCF=-0.093484, delta_HCTB=-0.001082, delta_LCSP=-0.031499; CP: delta_HCCF=0.127549, delta_HCTB=-0.007272, delta_LCSP=0.058310; EP: delta_HCCF=0.034871, delta_HCTB=-0.001444, delta_LCSP=0.016588.
+14. allow Step09-3B monthly pathway representativeness audit = True.
+15. This step did not run bootstrap, regression, correlation, significance testing, or plotting, and it did not use any old regional file, environmental variable, or all-42 joint strict mask.
+
+Support and mask audit
+- Paired-valid monthly cloud-fraction support is taken from cf_region_paired in CERES_regional_integrated_candidate_monthly.nc.
+- Matched pathway support uses sw_q_region, lw_q_region, and net_q_region on the same display-valid monthly cloud-type mask.
+- Baseline mask = display_valid_n_ge_24=True.
+- Unique excluded cell recorded only: CP | cloud_type=6 | CTP=1000-800 hPa | tau=60.36-378.65 | Low cloud | valid_n_kernel=17.
+- No additional valid_n>=48 exclusions were applied in this step.
+
+Definition checks
+- direct anomaly subset alignment max_abs_difference = 0.0000344204 W m^-2.
+- HCTB current-definition main-text requirement is fixed to True.
+- Legacy HCTB values are recorded only and are excluded from later statistics and figures.
+- Current direct chain remains anomaly-based and does not imply quantitative reconstruction from pathway series.

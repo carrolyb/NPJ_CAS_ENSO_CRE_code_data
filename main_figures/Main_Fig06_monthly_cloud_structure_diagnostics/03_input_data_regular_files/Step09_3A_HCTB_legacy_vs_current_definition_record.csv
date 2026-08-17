@@ -1,0 +1,4 @@
+region,delta_HCTB_legacy,delta_HCTB_current,difference_current_minus_legacy,sign_consistent,current_definition_required_for_main_text
+WP,0.001793745049316,-0.001081579462196,-0.002875324511511,False,True
+CP,-0.013720744402102,-0.007272362081494,0.006448382320608,True,True
+EP,-0.003203682995727,-0.001444141488901,0.001759541506826,True,True

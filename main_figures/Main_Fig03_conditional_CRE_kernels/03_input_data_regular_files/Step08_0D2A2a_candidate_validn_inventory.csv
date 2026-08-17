@@ -1,0 +1,127 @@
+region,cloud_type,ctp_bin,tau_bin,physical_group,valid_n_kernel,display_valid_n_ge_24,sensitivity_valid_n_ge_48,newly_excluded_by_valid_n48
+WP,1,1000-800,0.02-1.27,low cloud,248,True,True,False
+WP,2,1000-800,1.27-3.55,low cloud,248,True,True,False
+WP,3,1000-800,3.55-9.38,low cloud,248,True,True,False
+WP,4,1000-800,9.38-22.63,low cloud,248,True,True,False
+WP,5,1000-800,22.63-60.36,low cloud,243,True,True,False
+WP,6,1000-800,60.36-378.65,low cloud,49,True,True,False
+WP,7,800-680,0.02-1.27,low cloud,248,True,True,False
+WP,8,800-680,1.27-3.55,low cloud,248,True,True,False
+WP,9,800-680,3.55-9.38,low cloud,248,True,True,False
+WP,10,800-680,9.38-22.63,low cloud,248,True,True,False
+WP,11,800-680,22.63-60.36,low cloud,248,True,True,False
+WP,12,800-680,60.36-378.65,low cloud,241,True,True,False
+WP,13,680-560,0.02-1.27,mid-level cloud,248,True,True,False
+WP,14,680-560,1.27-3.55,mid-level cloud,248,True,True,False
+WP,15,680-560,3.55-9.38,mid-level cloud,248,True,True,False
+WP,16,680-560,9.38-22.63,mid-level cloud,248,True,True,False
+WP,17,680-560,22.63-60.36,mid-level cloud,248,True,True,False
+WP,18,680-560,60.36-378.65,mid-level cloud,248,True,True,False
+WP,19,560-440,0.02-1.27,mid-level cloud,248,True,True,False
+WP,20,560-440,1.27-3.55,mid-level cloud,248,True,True,False
+WP,21,560-440,3.55-9.38,mid-level cloud,248,True,True,False
+WP,22,560-440,9.38-22.63,mid-level cloud,248,True,True,False
+WP,23,560-440,22.63-60.36,mid-level cloud,248,True,True,False
+WP,24,560-440,60.36-378.65,mid-level cloud,248,True,True,False
+WP,25,440-310,0.02-1.27,thin high cloud,248,True,True,False
+WP,26,440-310,1.27-3.55,thin high cloud,248,True,True,False
+WP,27,440-310,3.55-9.38,thick anvil cloud,248,True,True,False
+WP,28,440-310,9.38-22.63,thick anvil cloud,248,True,True,False
+WP,29,440-310,22.63-60.36,deep convective cloud,248,True,True,False
+WP,30,440-310,60.36-378.65,deep convective cloud,248,True,True,False
+WP,31,310-180,0.02-1.27,thin high cloud,248,True,True,False
+WP,32,310-180,1.27-3.55,thin high cloud,248,True,True,False
+WP,33,310-180,3.55-9.38,thick anvil cloud,248,True,True,False
+WP,34,310-180,9.38-22.63,thick anvil cloud,248,True,True,False
+WP,35,310-180,22.63-60.36,deep convective cloud,248,True,True,False
+WP,36,310-180,60.36-378.65,deep convective cloud,248,True,True,False
+WP,37,180-10,0.02-1.27,thin high cloud,248,True,True,False
+WP,38,180-10,1.27-3.55,thin high cloud,248,True,True,False
+WP,39,180-10,3.55-9.38,thick anvil cloud,248,True,True,False
+WP,40,180-10,9.38-22.63,thick anvil cloud,248,True,True,False
+WP,41,180-10,22.63-60.36,deep convective cloud,248,True,True,False
+WP,42,180-10,60.36-378.65,deep convective cloud,248,True,True,False
+CP,1,1000-800,0.02-1.27,low cloud,248,True,True,False
+CP,2,1000-800,1.27-3.55,low cloud,248,True,True,False
+CP,3,1000-800,3.55-9.38,low cloud,248,True,True,False
+CP,4,1000-800,9.38-22.63,low cloud,248,True,True,False
+CP,5,1000-800,22.63-60.36,low cloud,247,True,True,False
+CP,6,1000-800,60.36-378.65,low cloud,17,False,False,False
+CP,7,800-680,0.02-1.27,low cloud,248,True,True,False
+CP,8,800-680,1.27-3.55,low cloud,248,True,True,False
+CP,9,800-680,3.55-9.38,low cloud,248,True,True,False
+CP,10,800-680,9.38-22.63,low cloud,248,True,True,False
+CP,11,800-680,22.63-60.36,low cloud,248,True,True,False
+CP,12,800-680,60.36-378.65,low cloud,243,True,True,False
+CP,13,680-560,0.02-1.27,mid-level cloud,248,True,True,False
+CP,14,680-560,1.27-3.55,mid-level cloud,248,True,True,False
+CP,15,680-560,3.55-9.38,mid-level cloud,248,True,True,False
+CP,16,680-560,9.38-22.63,mid-level cloud,248,True,True,False
+CP,17,680-560,22.63-60.36,mid-level cloud,248,True,True,False
+CP,18,680-560,60.36-378.65,mid-level cloud,248,True,True,False
+CP,19,560-440,0.02-1.27,mid-level cloud,248,True,True,False
+CP,20,560-440,1.27-3.55,mid-level cloud,248,True,True,False
+CP,21,560-440,3.55-9.38,mid-level cloud,248,True,True,False
+CP,22,560-440,9.38-22.63,mid-level cloud,248,True,True,False
+CP,23,560-440,22.63-60.36,mid-level cloud,248,True,True,False
+CP,24,560-440,60.36-378.65,mid-level cloud,248,True,True,False
+CP,25,440-310,0.02-1.27,thin high cloud,248,True,True,False
+CP,26,440-310,1.27-3.55,thin high cloud,248,True,True,False
+CP,27,440-310,3.55-9.38,thick anvil cloud,248,True,True,False
+CP,28,440-310,9.38-22.63,thick anvil cloud,248,True,True,False
+CP,29,440-310,22.63-60.36,deep convective cloud,248,True,True,False
+CP,30,440-310,60.36-378.65,deep convective cloud,248,True,True,False
+CP,31,310-180,0.02-1.27,thin high cloud,248,True,True,False
+CP,32,310-180,1.27-3.55,thin high cloud,248,True,True,False
+CP,33,310-180,3.55-9.38,thick anvil cloud,248,True,True,False
+CP,34,310-180,9.38-22.63,thick anvil cloud,248,True,True,False
+CP,35,310-180,22.63-60.36,deep convective cloud,248,True,True,False
+CP,36,310-180,60.36-378.65,deep convective cloud,248,True,True,False
+CP,37,180-10,0.02-1.27,thin high cloud,248,True,True,False
+CP,38,180-10,1.27-3.55,thin high cloud,248,True,True,False
+CP,39,180-10,3.55-9.38,thick anvil cloud,248,True,True,False
+CP,40,180-10,9.38-22.63,thick anvil cloud,248,True,True,False
+CP,41,180-10,22.63-60.36,deep convective cloud,248,True,True,False
+CP,42,180-10,60.36-378.65,deep convective cloud,248,True,True,False
+EP,1,1000-800,0.02-1.27,low cloud,248,True,True,False
+EP,2,1000-800,1.27-3.55,low cloud,248,True,True,False
+EP,3,1000-800,3.55-9.38,low cloud,248,True,True,False
+EP,4,1000-800,9.38-22.63,low cloud,248,True,True,False
+EP,5,1000-800,22.63-60.36,low cloud,248,True,True,False
+EP,6,1000-800,60.36-378.65,low cloud,213,True,True,False
+EP,7,800-680,0.02-1.27,low cloud,248,True,True,False
+EP,8,800-680,1.27-3.55,low cloud,248,True,True,False
+EP,9,800-680,3.55-9.38,low cloud,248,True,True,False
+EP,10,800-680,9.38-22.63,low cloud,248,True,True,False
+EP,11,800-680,22.63-60.36,low cloud,248,True,True,False
+EP,12,800-680,60.36-378.65,low cloud,248,True,True,False
+EP,13,680-560,0.02-1.27,mid-level cloud,248,True,True,False
+EP,14,680-560,1.27-3.55,mid-level cloud,248,True,True,False
+EP,15,680-560,3.55-9.38,mid-level cloud,248,True,True,False
+EP,16,680-560,9.38-22.63,mid-level cloud,248,True,True,False
+EP,17,680-560,22.63-60.36,mid-level cloud,248,True,True,False
+EP,18,680-560,60.36-378.65,mid-level cloud,248,True,True,False
+EP,19,560-440,0.02-1.27,mid-level cloud,248,True,True,False
+EP,20,560-440,1.27-3.55,mid-level cloud,248,True,True,False
+EP,21,560-440,3.55-9.38,mid-level cloud,248,True,True,False
+EP,22,560-440,9.38-22.63,mid-level cloud,248,True,True,False
+EP,23,560-440,22.63-60.36,mid-level cloud,248,True,True,False
+EP,24,560-440,60.36-378.65,mid-level cloud,248,True,True,False
+EP,25,440-310,0.02-1.27,thin high cloud,248,True,True,False
+EP,26,440-310,1.27-3.55,thin high cloud,248,True,True,False
+EP,27,440-310,3.55-9.38,thick anvil cloud,248,True,True,False
+EP,28,440-310,9.38-22.63,thick anvil cloud,248,True,True,False
+EP,29,440-310,22.63-60.36,deep convective cloud,248,True,True,False
+EP,30,440-310,60.36-378.65,deep convective cloud,248,True,True,False
+EP,31,310-180,0.02-1.27,thin high cloud,248,True,True,False
+EP,32,310-180,1.27-3.55,thin high cloud,248,True,True,False
+EP,33,310-180,3.55-9.38,thick anvil cloud,248,True,True,False
+EP,34,310-180,9.38-22.63,thick anvil cloud,248,True,True,False
+EP,35,310-180,22.63-60.36,deep convective cloud,248,True,True,False
+EP,36,310-180,60.36-378.65,deep convective cloud,248,True,True,False
+EP,37,180-10,0.02-1.27,thin high cloud,248,True,True,False
+EP,38,180-10,1.27-3.55,thin high cloud,248,True,True,False
+EP,39,180-10,3.55-9.38,thick anvil cloud,248,True,True,False
+EP,40,180-10,9.38-22.63,thick anvil cloud,248,True,True,False
+EP,41,180-10,22.63-60.36,deep convective cloud,248,True,True,False
+EP,42,180-10,60.36-378.65,deep convective cloud,248,True,True,False

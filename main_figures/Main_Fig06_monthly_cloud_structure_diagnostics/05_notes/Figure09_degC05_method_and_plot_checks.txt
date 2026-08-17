@@ -1,0 +1,83 @@
+Figure09 degC05 method and plot checks
+
+- actual anomaly-ready monthly input path: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/03_input_data/Step09_3A_metric_and_pathway_monthly_anomaly_ready_series.csv
+- actual deterministic relationship input path: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/03_input_data/Step09_3B_single_metric_pathway_relationship_deterministic.csv
+- actual bootstrap relationship input path: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/03_input_data/Step09_3B_single_metric_pathway_relationship_bootstrap.csv
+- actual HCTB incremental-value input path: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/03_input_data/Step09_3B_HCTB_incremental_value_beyond_HCCF.csv
+- original ENSO-subset sensitivity input path retained for audit context: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/03_input_data/Step09_3B_ENSO_subset_direction_sensitivity_record.csv
+- derived degC05 ENSO-subset sensitivity output path: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/04_key_results/Figure09_degC05_ENSO_subset_direction_sensitivity.csv
+- Nino3.4 input path for degC05 subset definition: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/03_input_data/nino34_200207_202302.csv
+- plotting style follows the Figure09 copy.py layout = True
+- scatter plot data unchanged relative to v2_txt all-month rendering = True
+- regression coefficients unchanged from fixed Step09-3B deterministic inputs = True
+- moving-block-bootstrap CI unchanged from fixed Step09-3B bootstrap inputs = True
+- panel layout and axis limits unchanged from v2_txt = True
+- +/-0.5 C Nino3.4 threshold is applied only to the ENSO direction-consistency sensitivity audit = True
+- displayed figure still uses all 248 calendar-month anomalies per region = True
+- formal plot generated from fixed audited inputs only.
+- no monthly series recomputed during plotting.
+- no regression or bootstrap recomputed during plotting.
+- HCCF comparator only.
+- HCTB uses remapped current six-cell Deep convective definition.
+- LCSP equals negative current Low cloud occurrence.
+- DCEP excluded.
+- WP/CP/EP only; TP not plotted.
+- calendar-month anomaly convention; no detrending or preprocessing standardization.
+- identity checks passed with max_abs_difference=0.
+- all nine primary slopes significant by moving-block-bootstrap CI.
+- HCTB incremental-value support in WP/CP/EP.
+- degC05 ENSO definition = nino34_anom with El Nino >= +0.5 C and La Nina <= -0.5 C.
+- degC05 ENSO counts = El Nino 54, La Nina 85, subset total 139.
+- degC05 ENSO-phase subset direction consistency for all nine relationships.
+- EP caution: HCTB univariate R2 is not larger than HCCF R2, although incremental information beyond HCCF is supported.
+- no direct all-sky Net CRE variable plotted or tested.
+- Figure 9 remains diagnostic representativeness only.
+- Figure 9 does not test direct all-sky Net CRE linkage.
+- no verified mechanism / control / exact reconstruction language.
+- Figure 9 is diagnostic representativeness, not verified mechanism, causal control, or direct-response reconstruction.
+
+Figure role boundary
+- Figure 9 differs from Figures 3–8 by evaluating monthly representativeness rather than ENSO composite pathway magnitude or spatial distribution.
+- Figure 9 does not include direct all-sky Net CRE linkage.
+- Figure 9 does not imply exact reconstruction, full attribution, control, or verified mechanism.
+
+Plotting references
+- plot data output: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/04_key_results/Figure09_degC05_plot_data.csv
+- png output: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/01_final_figure/Figure09_monthly_diagnostic_representativeness_degC05.png
+- pdf output: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/01_final_figure/Figure09_monthly_diagnostic_representativeness_degC05.pdf
+- caption output: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/05_notes/Figure09_degC05_caption.md
+- method checks output: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/05_notes/Figure09_degC05_method_and_plot_checks.txt
+- input manifest output: /Users/binyao/Desktop/P3/figure_packages/Figure09_monthly_diagnostic_representativeness_degC05/05_notes/Figure09_degC05_input_data_manifest.md
+- Figure 8 method boundary reference used if available: /Users/binyao/Desktop/P3/figure_packages/Figure08_spatial_Net_total_pathways_degC05/05_notes/Figure08_degC05_method_and_plot_checks.txt
+- Figure 8 caption boundary reference used if available: /Users/binyao/Desktop/P3/figure_packages/Figure08_spatial_Net_total_pathways_degC05/05_notes/Figure08_degC05_caption.md
+
+Fixed plotting inputs
+- row 1 = HCCF anomaly vs high-cloud Net pathway anomaly
+- row 2 = HCTB anomaly vs high-cloud Net pathway anomaly
+- row 3 = LCSP anomaly vs low-cloud Net pathway anomaly
+- columns = WP, CP, EP
+- point count per panel = 248
+- points are not colored by ENSO phase
+- regression line uses fixed deterministic slope/intercept from Step09-3B
+- slope CI annotations use fixed Step09-3B moving-block-bootstrap outputs only
+- block_length = 12 months
+- n_boot = 2000
+- seed = 42
+
+degC05 ENSO sensitivity summary
+- HCCF comparator WP: r_ENSO_subset=-0.643055, slope_ENSO_subset=-15.004769, sign_consistent=True.
+- HCCF comparator CP: r_ENSO_subset=-0.493165, slope_ENSO_subset=-6.598053, sign_consistent=True.
+- HCCF comparator EP: r_ENSO_subset=-0.594348, slope_ENSO_subset=-8.858291, sign_consistent=True.
+- HCTB diagnostic WP: r_ENSO_subset=-0.766842, slope_ENSO_subset=-44.507975, sign_consistent=True.
+- HCTB diagnostic CP: r_ENSO_subset=-0.558949, slope_ENSO_subset=-33.334818, sign_consistent=True.
+- HCTB diagnostic EP: r_ENSO_subset=-0.275255, slope_ENSO_subset=-16.703415, sign_consistent=True.
+- LCSP diagnostic WP: r_ENSO_subset=0.961473, slope_ENSO_subset=40.199306, sign_consistent=True.
+- LCSP diagnostic CP: r_ENSO_subset=0.965389, slope_ENSO_subset=30.043734, sign_consistent=True.
+- LCSP diagnostic EP: r_ENSO_subset=0.954428, slope_ENSO_subset=79.310196, sign_consistent=True.
+
+Axis limits
+- HCCF row x-limits shared across WP/CP/EP = [-0.334220, 0.334220]
+- HCTB row x-limits shared across WP/CP/EP = [-0.099173, 0.099173]
+- LCSP row x-limits shared across WP/CP/EP = [-0.105102, 0.105102]
+- high-cloud pathway y-limits shared across rows 1-2 = [-6.469665, 6.469665]
+- low-cloud pathway y-limits shared across row 3 = [-7.332604, 7.332604]

@@ -1,0 +1,47 @@
+Step08-0D-2B-2b-2 direct bootstrap and pathway alignment summary
+
+1. Direct-chain definition
+- direct all-sky daytime primary variable = net_allsky_cre from /Volumes/My Book/P3/data_processed/anomalies/ceres_monthly_anomalies.nc
+- direct Net dims = (time, lat, lon)
+- direct SW/LW/Net come from the current gridded daytime source family
+- old regional file used as direct or candidate main chain = False
+
+2. Deterministic recovery and shared bootstrap indices
+- recovered B2b1 direct deterministic Net values = True
+- reused the same joint moving-block bootstrap index-generation scheme as candidate = True
+- direct and candidate comparison used synchronized replicate indices = True
+- candidate Total CI recovery from synchronized display-valid monthly sum42 series = True
+
+3. Direct Net bootstrap
+- WP: estimate=-0.341851, 95% CI=[-1.128014, 0.435173], significant=False
+- CP: estimate=1.032689, 95% CI=[0.534977, 1.673804], significant=True
+- EP: estimate=1.652697, 95% CI=[0.527484, 2.798021], significant=True
+
+4. Candidate/direct synchronized alignment
+- WP: residual_estimate=0.297300, residual_CI=[-0.192652, 0.869113], sign_alignment_probability=0.6505, positive_alignment_probability=0.1920, negative_alignment_probability=0.4585, opposite_sign_conflict=False
+- CP: residual_estimate=0.195319, residual_CI=[-0.538952, 0.853811], sign_alignment_probability=0.9960, positive_alignment_probability=0.9960, negative_alignment_probability=0.0000, opposite_sign_conflict=False
+- EP: residual_estimate=-0.938227, residual_CI=[-2.910199, 1.303408], sign_alignment_probability=0.7400, positive_alignment_probability=0.7385, negative_alignment_probability=0.0015, opposite_sign_conflict=False
+
+5. Interpretive gate
+- quantitative reconstruction remains inadmissible = True
+- CP strong directional consistency = True
+- WP statistically opposite-sign conflict = False
+- EP statistically opposite-sign conflict = False
+- Figures 4-7 candidate formal redraw allowed = True
+- Figure 8 formal plotting preparation allowed = True
+
+6. Wording guidance
+- Allowed for CP: The significant positive central-Pacific cloud-type pathway is consistent with a significant positive direct daytime Net CRE response, although the cloud-type pathway is not interpreted as an exact reconstruction of the all-sky response.
+- Allowed when same sign but at least one side non-significant: The estimated cloud-type pathway is directionally consistent with the direct daytime Net CRE response, without implying a statistically robust regional linkage.
+- Forbidden: any wording that reclassifies the cloud-type pathway as an exact reconstruction of the direct all-sky Net CRE response.
+
+7. Existing Figure 2 record check
+- Figure02_regional_direct_CRE_summary.csv WP: point_estimate_match=True, existing_ci_available=True
+- Figure02_regional_direct_CRE_summary.csv CP: point_estimate_match=True, existing_ci_available=True
+- Figure02_regional_direct_CRE_summary.csv EP: point_estimate_match=True, existing_ci_available=True
+- Fig01_regional_values_from_spatial_field.csv WP: point_estimate_match=True, existing_ci_available=False
+- Fig01_regional_values_from_spatial_field.csv CP: point_estimate_match=True, existing_ci_available=False
+- Fig01_regional_values_from_spatial_field.csv EP: point_estimate_match=True, existing_ci_available=False
+- full_direct_canonical_monthly_equal.csv WP: point_estimate_match=True, existing_ci_available=False
+- full_direct_canonical_monthly_equal.csv CP: point_estimate_match=True, existing_ci_available=False
+- full_direct_canonical_monthly_equal.csv EP: point_estimate_match=True, existing_ci_available=False

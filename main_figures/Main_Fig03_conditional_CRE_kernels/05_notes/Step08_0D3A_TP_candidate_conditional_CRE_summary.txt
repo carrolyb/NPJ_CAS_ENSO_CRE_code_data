@@ -1,0 +1,54 @@
+Step08-0D-3A TP candidate conditional CRE summary
+
+1. Fixed premises
+- source product is daytime = True
+- candidate regional quantitative main chain = True
+- contribution definition = cosine-area-mean(gridcell_cf_times_gridcell_CRE)
+- candidate conditional CRE definition = mean(Q)/mean(CF)
+- CRE0 is not a simple regional average of gridcell CRE
+- CRE0 is not the arithmetic monthly mean of effective CRE
+- per-cloud-type paired-valid support = True
+- cf == 0 retained as zero contribution = True
+- Net = SW + LW = True
+- no all-42 joint strict mask = True
+- legacy Figures 5-7 remain frozen = True
+- candidate/direct relation is pathway diagnostic, not exact reconstruction = True
+- this step does not generate formal figures = True
+
+2. Generation status
+- TP candidate monthly contribution generated = True
+- contribution-consistent CRE0 = mean(Q)/mean(CF) applied = True
+- daytime / paired-valid / Net=SW+LW / no all-42 strict-mask boundary preserved = True
+
+3. TP closure checks
+- TP SW/LW/Net CRE maximum closure error = 5.684341886081e-14 W m-2
+- closure tolerance satisfied (<= 1e-10 W m-2) = True
+
+4. TP valid_n mask inventory
+- TP cells with display_valid_n_ge_24 = 42
+- TP cells excluded by baseline valid_n>=24 = 0
+  none
+- TP cells newly excluded by sensitivity valid_n>=48 = 0
+  none
+
+5. Ratio-of-means versus monthly-mean effective CRE diagnostic
+- maximum |CRE0_Net_ratio - CRE0_Net_monthlymean| = 4.948686 W m-2
+- cell = TP | cloud_type=6 | CTP=1000-800 | tau=60.36-378.65 | CRE0_Net_ratio=-212.751412 | CRE0_Net_monthlymean=-207.802726 | difference=-4.948686
+
+6. TP candidate versus legacy record
+- legacy TP Figure 4 data readable = True
+- TP | cloud_type=24 | mid-level cloud: legacy_Net=-186.198706, candidate_Net=-171.956169, diff=+14.242537, sign_consistent=True
+- TP | cloud_type=18 | mid-level cloud: legacy_Net=-200.084793, candidate_Net=-187.848053, diff=+12.236740, sign_consistent=True
+- TP | cloud_type=30 | deep convective cloud: legacy_Net=-155.129006, candidate_Net=-142.943382, diff=+12.185624, sign_consistent=True
+- TP | cloud_type=12 | low cloud: legacy_Net=-200.057066, candidate_Net=-188.385430, diff=+11.671635, sign_consistent=True
+- TP | cloud_type=33 | thick anvil cloud: legacy_Net=-2.640270, candidate_Net=-6.394512, diff=-3.754241, sign_consistent=True
+
+7. Output products
+- TP candidate Figure 4 CSV generated = True
+- complete Figure 4 candidate plot-input table generated = True
+- TP candidate vs legacy record generated = True
+
+8. Gate status
+- allow Final Figure 4 candidate formal redraw = True
+- Figures 5-7 can proceed directly to candidate redraw = True
+- Figure 8 should move to spatial sample-availability audit, not continue direct or strict audit = True

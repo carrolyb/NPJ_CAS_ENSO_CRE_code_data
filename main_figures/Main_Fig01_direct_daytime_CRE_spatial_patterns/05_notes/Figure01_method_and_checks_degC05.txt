@@ -1,0 +1,11 @@
+Figure01 method and checks (+/-0.5C ENSO definition)
+
+- monthly Nino3.4 source: /Volumes/My Book/P3/data_processed/anomalies/nino34_200207_202302.csv
+- generated ENSO month file: /Volumes/My Book/P3/figure_packages/Figure01_main_CRE_lat15_degC05/03_input_data/enso_month_samples.csv
+- generated ENSO event file: /Volumes/My Book/P3/figure_packages/Figure01_main_CRE_lat15_degC05/03_input_data/enso_event_summary.csv
+- El Nino months: 54
+- La Nina months: 85
+- El Nino events: 8
+- La Nina events: 12
+- max spatial closure residual: 0.000000000000e+00
+- max regional net difference vs original canonical table: 0.153242

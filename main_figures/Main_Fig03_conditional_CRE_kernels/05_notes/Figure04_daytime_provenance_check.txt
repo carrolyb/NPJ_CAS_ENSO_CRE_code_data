@@ -1,0 +1,24 @@
+Figure 4 daytime provenance check
+
+Monthly regional dataset path: /Volumes/My Book/P3/data_processed/ceres_monthly/ceres_monthly_regional.nc
+Figure 5 script path: /Volumes/My Book/P3/scripts/figures_main/make_fig05_cloudtype_occurrence_net_contribution.py
+Monthly-build script path: /Volumes/My Book/P3/scripts/02_build_ceres_monthly.py
+Raw CERES reference file path: /Volumes/My Book/CERES/2002/CERES_FluxByCldTyp-Day_Terra-Aqua-MODIS_Ed4.1_Subset_20020701-20020711.nc
+
+Raw product metadata evidence:
+- raw title: CERES FluxByCldTyp Product - Daily Mean
+- raw DOI: 10.5067/Terra-Aqua/CERES/FluxByCldTyp-DAY_L3.004A
+- raw file basename: CERES_FluxByCldTyp-Day_Terra-Aqua-MODIS_Ed4.1_Subset_20020701-20020711.nc
+
+Code-chain evidence:
+- scripts/02_build_ceres_monthly.py writes data_processed/ceres_monthly/ceres_monthly_regional.nc from the CERES input inventory opened by open_ceres_dataset.
+- scripts/figures_main/make_fig05_cloudtype_occurrence_net_contribution.py reads data_processed/ceres_monthly/ceres_monthly_regional.nc and cites /Volumes/My Book/CERES/.../CERES_FluxByCldTyp-Day_Terra-Aqua-MODIS_Ed4.1_Subset_20020701-20020711.nc as the raw CERES attribute reference.
+- Figure 4 v1 restored CRE0 from the same Figure 5 monthly regional dataset and sample rule.
+- Figure 6 verified-rebuild scripts use the same data_processed/ceres_monthly/ceres_monthly_regional.nc pathway for Net decomposition inputs.
+
+source_product_is_daytime = True
+Figure04_cre0_derived_from_daytime_product = True
+Figure05_occurrence_contribution_is_daytime_based = True
+Figure06_net_pathway_is_daytime_based = True
+
+daytime terminology verified from the source-product chain
